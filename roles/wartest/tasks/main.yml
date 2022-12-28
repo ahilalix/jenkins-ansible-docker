@@ -9,6 +9,12 @@
     name:
       - docker
       - docker-compose
+      
+- name: "Starting docker service"
+  service:
+    name: "docker"
+    state: started
+    enabled: yes
 
 - name: run container
   docker_container:
